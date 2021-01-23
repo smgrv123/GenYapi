@@ -1,7 +1,5 @@
-import React,{useState} from 'react';
-import { Button, View, Text, TextInput, useWindowDimensions, TouchableOpacity,StyleSheet } from 'react-native';
-import { NavigationContainer } from '@react-navigation/native';
-import { createStackNavigator } from '@react-navigation/stack';
+import React from 'react';
+import { StyleSheet } from 'react-native'; 
  export const styles = StyleSheet.create({
     button:{
      height:50,
@@ -15,5 +13,29 @@ import { createStackNavigator } from '@react-navigation/stack';
        color:'#006400',
        fontSize:20
            
-     }
+     },
+     btn:{
+      position:'absolute',
+      width:50,
+      height:50,
+      backgroundColor:'green',
+      borderRadius:50,
+      bottom:10,
+      top:680,
+      right:20,
+      alignItems:'center',
+      justifyContent:'center'
+ 
+ 
+      },
+      plus:{
+        color:'white',
+        fontSize:30
+ 
+      },
+      textst:
+      {
+        fontSize:35,
+        justifyContent:'center'
+      }
    })

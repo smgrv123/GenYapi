@@ -1,23 +1,14 @@
 import React from 'react';
-import {  View, Text, TouchableOpacity } from 'react-native';
+import { View, Text, useWindowDimensions, } from 'react-native';
+
 import { styles } from "../styles/styles"
 
-export default function DetailsScreen({ navigation }) {
+export default function DetailsScreen({ route }) {
+  const { name, quantity } = route.params;
   return (
     <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center', backgroundColor: '#12B2F3', padding: 20 }}>
-
-      <TouchableOpacity
-        style={styles.button}
-        onPress={() => navigation.navigate('Name')}
-      >
-        <Text style={styles.buttontext}>Login</Text>
-      </TouchableOpacity>
-      <TouchableOpacity
-        style={styles.button}
-        onPress={() => navigation.goBack()}
-      >
-        <Text style={styles.buttontext}>go back</Text>
-      </TouchableOpacity>
+      <Text style={styles.textst}>Name: {JSON.stringify(name)}</Text>
+      <Text style={styles.textst}>Quantity: {JSON.stringify(quantity)}</Text>
     </View>
   );
 }
