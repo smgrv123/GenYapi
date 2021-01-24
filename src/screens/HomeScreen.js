@@ -20,7 +20,6 @@ if(loading){
   return(
     <View>
       <ActivityIndicator
-      style={styles.loading}
       animating={loading}
       size={70}
       color='dimgrey'
