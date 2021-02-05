@@ -28,7 +28,14 @@ export default function NameScreen({ navigation }) {
         quantity: itemquantity,
         group: '1'
       }
-    });
+    }).then(res => {
+      console.log(res.data)
+      navigation.replace("Home")
+  }
+  ).catch(err => {
+      console.log(err)
+  })
+
   }
 
   return (
@@ -72,13 +79,13 @@ export default function NameScreen({ navigation }) {
 const style = StyleSheet.create({
   textinput:
   {
-    height: 50,
+    height: 70,
     borderColor: 'gray',
     borderWidth: 1,
     backgroundColor: 'white',
     borderRadius: 20,
     padding: 10,
-    fontSize: 25,
+    fontSize: 30,
     margin: 20,
   },
 })

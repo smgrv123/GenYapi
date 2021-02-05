@@ -30,7 +30,19 @@ export default UpdateScreen = ({ route, navigation }) => {
                 }}
             />
             <TouchableOpacity
-                style={styles.button}
+                style={ { paddingHorizontal: 20,
+                    justifyContent: 'center',
+                    alignItems:'center',
+                    borderWidth:1,
+                    borderRadius:10,
+                    borderColor:"grey",
+                    padding:5,
+                    marginTop:20,
+                    marginBottom:10,
+                    marginLeft:20,
+                    height:70,
+                    width:295,
+                    backgroundColor:'pink'}}
                 onPress={() => {
                     update()
                 }}
@@ -56,6 +68,6 @@ const style = StyleSheet.create({
         padding: 10,
         fontSize: 25,
         margin: 20,
-        marginTop: 50
+        marginTop: 325
     },
 })
