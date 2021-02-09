@@ -1,62 +1,48 @@
-import { StyleSheet } from 'react-native';
+import {useWindowDimensions, StyleSheet} from 'react-native';
+
 export const styles = StyleSheet.create({
   button: {
-    paddingHorizontal: 20,
-    justifyContent: 'center',
-    alignItems:'center',
-    borderWidth:1,
-    borderRadius:10,
-    borderColor:"grey",
-    padding:5,
-    marginTop:50,
-    marginBottom:10,
-    marginLeft:20,
-    height:70,
-    width:295,
-    backgroundColor:'pink'
-    //ss bhejna kaase dekh rha ek min
+    alignItems: 'center',
+    borderWidth: 0.5,
+    borderColor: 'black',
+    borderRadius: 7,
+    borderColor: 'grey',
+    marginTop: 50,
+    marginLeft: '15%',
+    height: 50,
+    width: 285,
+    backgroundColor: 'lightgrey',
   },
   buttontext: {
     textAlign: 'center',
-    color:"black",
+    color: 'black',
     fontSize: 25,
-    fontStyle:'italic'
+    marginTop:5,
+    fontWeight:"bold"
   },
   btn: {
     position: 'absolute',
-    width: 50,
-    height: 50,
+    width: 70,
+    height: 70,
     alignItems: 'center',
     justifyContent: 'center',
-    marginLeft: 350,
-    marginTop: 770
-    //kosna button jo uper plus wala ha ok smj gya dekhne deok
-
+    marginLeft: '80%',
+    marginTop: '160%',
+    borderRadius:100
   },
   plus: {
     color: 'black',
     fontSize: 30,
-    marginTop:100,
-    alignItems:'flex-start'
   },
-  textst:
-  {
+  textst: {
     fontSize: 35,
-    justifyContent: 'center'
+    justifyContent: 'center',
   },
-  container:
-  {
-    justifyContent:'space-between',
-    flexDirection:'row'
+  delbtn: {
+    width: 40,
+    height: 40,
+    marginLeft: '80%',
+    position:'relative',
+    marginTop:-35
   },
-  delbtn:{
-    width:80,
-    height:70,
-backgroundColor:'#FB4141',
-marginStart:213,
-marginBottom:100,
-    borderRadius:10
-// ab dekha
-
-  }
-})
+});
